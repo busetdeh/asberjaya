@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+# Local backend for offline testing / local development mode
+local_backend: true
+
+media_folder: "assets/gallery"
+public_folder: "assets/gallery"
+
+site_url: https://asberjaya.com
+display_url: https://asberjaya.com
+
+logo_url: ../assets/logo.png
+
+collections:
+  - name: "company_settings"
+    label: "Informasi Perusahaan & Kontak"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "contact_info"
+        label: "Kontak & Alamat Kantor"
+        file: "content/settings.json"
+        fields:
+          - { label: "Nama Perusahaan", name: "company_name", widget: "string", default: "AS BERJAYA Logistic Services" }
+          - { label: "Alamat Kantor HQ", name: "address", widget: "text", default: "Epica Fleksible Office GWR Serpong, Jl. Mh. Thamrin AA2 No.29, Tangerang 14330" }
+          - { label: "Nomor WhatsApp Operational", name: "whatsapp", widget: "string", default: "6281281521619" }
+          - { label: "Nomor Telepon Hotline", name: "phone", widget: "string", default: "+62 812-8152-1619" }
+          - { label: "Email Resmi", name: "email", widget: "string", default: "info@asberjaya.com" }
+          - { label: "Link Instagram", name: "instagram", widget: "string", default: "https://www.instagram.com/asberjaya1?igsh=dXFyczIzZTRrYjB6" }
+          - { label: "Link TikTok", name: "tiktok", widget: "string", default: "https://www.tiktok.com/@asberjaya1?_r=1&_t=ZS-98XKip0dtS9" }
+          - { label: "Link YouTube", name: "youtube", widget: "string", default: "https://youtube.com/@asberjaya1?si=kYkbD7eWy1jaQaCW" }
+
+  - name: "gallery"
+    label: "Galeri Operasional Fleet"
+    folder: "content/gallery"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Judul Foto", name: "title", widget: "string" }
+      - { label: "Badge Label (misal: PREMIUM TOWING / HEAVY HAULAGE)", name: "badge", widget: "string" }
+      - { label: "File Foto Operasional", name: "image", widget: "image" }
+      - { label: "Deskripsi Singkat", name: "description", widget: "text", required: false }
+
+  - name: "services"
+    label: "Layanan Logistik"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - { label: "Nama Layanan", name: "title", widget: "string" }
+      - { label: "Ringkasan Singkat", name: "summary", widget: "text" }
+      - { label: "Foto Sampul Layanan", name: "image", widget: "image" }
+      - { label: "Detail Penjelasan Layanan", name: "body", widget: "markdown" }

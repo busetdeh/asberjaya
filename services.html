@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Services | AS BERJAYA</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "outline": "#926f6b",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#93000d",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#44474b",
+                        "surface-container-highest": "#e1e3e4",
+                        "inverse-surface": "#2e3132",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c1d",
+                        "surface-tint": "#c00014",
+                        "on-error": "#ffffff",
+                        "background": "#f8f9fa",
+                        "secondary-fixed-dim": "#c5c6cc",
+                        "secondary-fixed": "#e1e2e8",
+                        "surface-dim": "#d9dadb",
+                        "on-error-container": "#93000a",
+                        "secondary": "#5c5e63",
+                        "primary-container": "#e31e24",
+                        "on-background": "#191c1d",
+                        "surface-variant": "#e1e3e4",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#410002",
+                        "surface": "#f8f9fa",
+                        "tertiary": "#545c64",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary-container": "#fffafa",
+                        "surface-bright": "#f8f9fa",
+                        "primary": "#ba0013",
+                        "primary-fixed": "#ffdad6",
+                        "inverse-on-surface": "#f0f1f2",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#e1e2e8",
+                        "on-tertiary-container": "#fafbff",
+                        "inverse-primary": "#ffb4ab",
+                        "on-secondary-fixed": "#191c20",
+                        "on-secondary-container": "#626469",
+                        "surface-container": "#edeeef",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#bfc8d0",
+                        "primary-fixed-dim": "#ffb4ab",
+                        "on-tertiary-fixed-variant": "#3f484f",
+                        "tertiary-fixed": "#dbe4ed",
+                        "on-tertiary-fixed": "#141d23",
+                        "tertiary-container": "#6c757d",
+                        "outline-variant": "#e7bdb8",
+                        "on-surface-variant": "#5d3f3c",
+                        "surface-container-high": "#e7e8e9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "padding-section": "64px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-desktop": "40px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "headline-xl": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .service-card-shadow {
+            box-shadow: 0 4px 12px rgba(46, 49, 50, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface overflow-x-hidden">
+
+<!-- Navigation Drawer Overlay -->
+<div class="fixed inset-0 bg-black/50 z-[55] opacity-0 pointer-events-none transition-opacity duration-300" id="drawer-overlay"></div>
+
+<!-- Navigation Drawer -->
+<aside class="fixed inset-y-0 left-0 w-64 z-[60] -translate-x-full transition-transform duration-300 ease-in-out bg-surface dark:bg-surface-dim shadow-xl flex flex-col p-4 gap-2" id="nav-drawer">
+<div class="flex items-center justify-between mb-8 px-4">
+<a href="index" class="flex items-center gap-2">
+<img alt="AS BERJAYA Logo" class="h-10 md:h-12 w-auto object-contain" src="assets/logo.png"/>
+</a>
+<button class="text-on-surface-variant p-2" onclick="toggleDrawer()" aria-label="Close Drawer">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors duration-200" href="index">
+<span class="material-symbols-outlined">home</span>
+<span class="font-body-lg text-body-lg">Home</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors duration-200" href="about">
+<span class="material-symbols-outlined">corporate_fare</span>
+<span class="font-body-lg text-body-lg">About Us</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary-container rounded-full transition-colors duration-200 font-bold" href="services">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">local_shipping</span>
+<span class="font-body-lg text-body-lg">Services</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors duration-200" href="contact">
+<span class="material-symbols-outlined">mail</span>
+<span class="font-body-lg text-body-lg">Contact</span>
+</a>
+</nav>
+</aside>
+
+<!-- Top App Bar -->
+<header class="fixed top-0 w-full z-50 bg-surface shadow-sm border-b border-outline-variant flex items-center justify-between px-margin-mobile md:px-margin-desktop h-16 md:h-20 transition-all duration-300" id="header">
+<div class="relative flex justify-between items-center w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<button class="md:hidden text-primary transition-all duration-200 active:scale-95 p-2" id="menu-toggle" aria-label="Toggle Navigation">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+<a href="index" class="flex items-center gap-2 h-8 md:h-12">
+<img alt="AS BERJAYA Logo" class="h-10 md:h-14 w-auto object-contain" src="assets/logo.png"/>
+</a>
+</div>
+
+<!-- Desktop Centered Navigation -->
+<nav class="hidden md:flex gap-8 items-center absolute left-1/2 -translate-x-1/2 z-10">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-body-md font-body-md" href="index">Home</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-body-md font-body-md" href="about">About Us</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 text-body-md font-body-md" href="services">Services</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 text-body-md font-body-md" href="contact">Contact</a>
+</nav>
+
+<div class="flex items-center gap-4">
+<a href="https://wa.me/6281281521619?text=Hello%20AS%20BERJAYA,%0AWe%20Would%20like%20to%20know%20the%20logistics%20quotation," target="_blank" rel="noopener noreferrer" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-lg text-label-md font-label-md uppercase tracking-wider font-bold transition-all hover:bg-primary-container inline-block">
+    Get a Quote
+</a>
+<a href="contact" class="md:hidden text-primary transition-all duration-200 active:scale-95 p-2">
+<span class="material-symbols-outlined text-[28px]">mail</span>
+</a>
+</div>
+</div>
+</header>
+
+<main class="pt-16 md:pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[60vh] flex flex-col justify-center px-margin-mobile md:px-margin-desktop py-padding-section bg-white overflow-hidden">
+<div class="max-w-container-max mx-auto w-full relative z-10">
+<div class="inline-flex items-center gap-2 mb-4">
+<div class="w-8 h-px bg-primary"></div>
+<span class="text-primary font-label-md text-label-md uppercase tracking-widest">Precision Logistics</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface mb-6 leading-tight">
+                    Engineering <span class="text-primary">Reliability</span> In Every Mile.
+                </h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl mb-8">
+                    We redefine industrial logistics through rigorous precision, advanced fleet technology, and an unyielding commitment to operational excellence.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#haulage" class="bg-primary text-on-primary px-8 py-4 rounded font-label-md text-label-md uppercase tracking-wider transition-all hover:opacity-90 active:scale-95 text-center inline-block">
+                        Explore Our Capabilities
+</a>
+<a href="https://wa.me/6281281521619?text=Hello%20AS%20BERJAYA,%0AWe%20Would%20like%20to%20know%20the%20logistics%20quotation," target="_blank" rel="noopener noreferrer" class="border border-outline text-on-surface px-8 py-4 rounded font-label-md text-label-md uppercase tracking-wider transition-all hover:bg-surface-container-low active:scale-95 text-center inline-block">
+                        Request Quotation
+</a>
+</div>
+</div>
+</section>
+
+<!-- Services Detailed Sections -->
+<!-- Industrial Haulage -->
+<section class="bg-white py-padding-section border-t border-outline-variant" id="haulage">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-8">
+<span class="text-primary font-label-md text-label-md">01</span>
+<h2 class="font-headline-lg-mobile md:text-headline-lg text-headline-lg-mobile mt-2 mb-4 text-on-surface">Industrial Haulage</h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">Heavy-duty transport solutions for machinery, raw materials, and large-scale industrial assets across the archipelago.</p>
+</div>
+<div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-8 border border-outline-variant shadow-md">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Modern Industrial Haulage Heavy Truck Transportation" style="background-image: url('assets/industrial-haulage-ai.jpg')"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="flex gap-4 p-4 bg-surface-container-low rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl">precision_manufacturing</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-1 text-on-surface">Overweight Cargo</h4>
+<p class="font-body-sm text-body-sm text-secondary">Expert handling of permit-heavy and out-of-gauge equipment.</p>
+</div>
+</div>
+<div class="flex gap-4 p-4 bg-surface-container-low rounded-lg border border-outline-variant">
+<span class="material-symbols-outlined text-primary text-3xl">settings_backup_restore</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-1 text-on-surface">Real-time Telematics</h4>
+<p class="font-body-sm text-body-sm text-secondary">Advanced tracking for load stability and ETA precision.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Smart Warehousing -->
+<section class="bg-surface py-padding-section border-t border-outline-variant" id="warehousing">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-8 md:text-left text-right">
+<span class="text-primary font-label-md text-label-md">02</span>
+<h2 class="font-headline-lg-mobile md:text-headline-lg text-headline-lg-mobile mt-2 mb-4 text-on-surface">Smart Warehousing</h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">Dynamic inventory management and strategic storage hubs optimized for rapid fulfillment.</p>
+</div>
+<div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-8 border border-outline-variant shadow-md">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Automated High-Tech Smart Warehousing Facility" style="background-image: url('assets/smart-warehousing-ai.jpg')"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-6 bg-white rounded-lg border border-outline-variant service-card-shadow">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">inventory_2</span>
+<h4 class="font-label-md text-label-md uppercase mb-2 text-on-surface">Inventory Control</h4>
+<p class="font-body-sm text-body-sm text-secondary">Full maintain with safety aspect.</p>
+</div>
+<div class="p-6 bg-white rounded-lg border border-outline-variant service-card-shadow">
+<span class="material-symbols-outlined text-primary text-3xl mb-3">verified</span>
+<h4 class="font-label-md text-label-md uppercase mb-2 text-on-surface">Climate Ready</h4>
+<p class="font-body-sm text-body-sm text-secondary">Temperature sensitive storage zones.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Global Freight -->
+<section class="bg-white py-padding-section border-t border-outline-variant" id="freight">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-8">
+<span class="text-primary font-label-md text-label-md">03</span>
+<h2 class="font-headline-lg-mobile md:text-headline-lg text-headline-lg-mobile mt-2 mb-4 text-on-surface">Global Freight</h2>
+<p class="font-body-md text-body-md text-secondary max-w-2xl">Seamless cross-border operations through sea and air, connecting local production to global markets.</p>
+</div>
+<div class="relative h-64 md:h-96 w-full rounded-xl overflow-hidden mb-8 border border-outline-variant shadow-md">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Global Freight Cargo Ship Maritime Port Operation" style="background-image: url('assets/global-freight-ai.jpg')"></div>
+</div>
+<div class="border-l-4 border-primary p-6 bg-surface-container-low rounded-r-lg">
+<h4 class="font-headline-sm text-headline-sm mb-2 text-on-surface">Customs Engineering</h4>
+<p class="font-body-md text-body-md text-secondary">We handle the complex regulatory landscape, ensuring your cargo clears checkpoints without administrative friction.</p>
+</div>
+</div>
+</section>
+
+<!-- AS BERJAYA Advantage Bento Grid (Mobile Adaptation) -->
+<section class="bg-inverse-surface text-on-primary py-padding-section">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg-mobile md:text-headline-lg text-headline-lg-mobile mb-2 text-center text-white">The Advantage</h2>
+<p class="font-body-sm text-body-sm text-surface-variant text-center mb-12 uppercase tracking-widest">Why Industry Leaders Choose Us</p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Bento Item 1 -->
+<div class="bg-white/5 border border-white/10 p-8 rounded-xl">
+<span class="material-symbols-outlined text-primary-fixed-dim text-4xl mb-4">shield_with_heart</span>
+<h3 class="font-headline-md text-headline-md mb-2 text-white">Zero-Accident Culture</h3>
+<p class="font-body-md text-body-md text-surface-variant">Industry-leading safety protocols and continuous operator training programs.</p>
+</div>
+<!-- Bento Item 2 (Emphasis) -->
+<div class="bg-primary p-8 rounded-xl">
+<span class="material-symbols-outlined text-white text-4xl mb-4">analytics</span>
+<h3 class="font-headline-md text-headline-md mb-2 text-white">Data-Driven Routing</h3>
+<p class="font-body-md text-body-md text-white/90">Proprietary algorithms that optimize fuel efficiency and delivery timelines by up to 22%.</p>
+</div>
+<!-- Bento Item 3 -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
+<span class="font-headline-lg text-headline-lg text-primary block">24/7</span>
+<span class="font-label-md text-label-md uppercase text-surface-variant">Operations</span>
+</div>
+<div class="bg-white/5 border border-white/10 p-6 rounded-xl text-center">
+<span class="font-headline-lg text-headline-lg text-primary block">150+</span>
+<span class="font-label-md text-label-md uppercase text-surface-variant">Fleet Units</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-white py-padding-section px-margin-mobile md:px-margin-desktop text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline-lg-mobile md:text-headline-lg text-headline-lg-mobile mb-4 text-on-surface">Ready for Precision?</h2>
+<p class="font-body-md text-body-md text-secondary mb-8">Consult with our engineering team to design your optimal supply chain architecture.</p>
+<a href="https://wa.me/6281281521619?text=Hello%20AS%20BERJAYA,%0AWe%20Would%20like%20to%20know%20the%20logistics%20quotation," target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-primary text-on-primary px-10 py-5 rounded-lg font-bold uppercase tracking-widest active:scale-95 transition-transform inline-block text-center">
+                Get Service Quote
+</a>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full bg-inverse-surface dark:bg-surface-container-lowest flex flex-col items-center gap-8 px-margin-mobile md:px-margin-desktop py-12 text-center border-t-4 border-primary">
+<div class="max-w-container-max mx-auto w-full flex flex-col items-center gap-8">
+<div class="flex flex-col items-center gap-4">
+<a href="index" class="inline-block h-10 mb-2">
+    <img src="assets/logo.png" alt="AS BERJAYA LOGISTIC SERVICES" class="h-12 w-auto object-contain bg-white px-3 py-1.5 rounded-lg shadow-sm">
+</a>
+<p class="font-body-sm text-body-sm text-surface-variant max-w-xs">High-precision industrial logistics infrastructure for the modern enterprise.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors font-body-sm text-body-sm" href="contact">Privacy Policy</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors font-body-sm text-body-sm" href="contact">Terms of Service</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors font-body-sm text-body-sm" href="contact">FAQ</a>
+<a class="text-surface-variant hover:text-primary-fixed-dim transition-colors font-body-sm text-body-sm" href="contact">Careers</a>
+</div>
+<!-- Social Media Links -->
+<div class="flex items-center justify-center gap-4 my-2">
+<a href="https://www.instagram.com/asberjaya1?igsh=dXFyczIzZTRrYjB6" target="_blank" rel="noopener noreferrer" aria-label="AS BERJAYA Instagram" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white active:scale-95 group" title="Instagram">
+  <svg class="w-5 h-5 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+</a>
+<a href="https://www.tiktok.com/@asberjaya1?_r=1&_t=ZS-98XKip0dtS9" target="_blank" rel="noopener noreferrer" aria-label="AS BERJAYA TikTok" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white active:scale-95 group" title="TikTok">
+  <svg class="w-5 h-5 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .56.04.83.1v-3.5a6.37 6.37 0 0 0-.83-.05A6.34 6.34 0 0 0 3 15.66 6.34 6.34 0 0 0 9.34 22a6.34 6.34 0 0 0 6.34-6.34V9.36a8.16 8.16 0 0 0 4.76 1.54V7.45a4.85 4.85 0 0 1-.85-.76z"/></svg>
+</a>
+<a href="https://youtube.com/@asberjaya1?si=kYkbD7eWy1jaQaCW" target="_blank" rel="noopener noreferrer" aria-label="AS BERJAYA YouTube" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-primary hover:border-primary transition-all text-white active:scale-95 group" title="YouTube">
+  <svg class="w-5 h-5 fill-current transition-transform group-hover:scale-110" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
+</div>
+<div class="w-full border-t border-white/10 pt-8 mt-4 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-sm text-body-sm text-surface-variant opacity-80">© 2026 AS BERJAYA Logistic Services. All rights reserved. Connecting the world with precision.</p>
+<span class="font-body-sm text-body-sm text-surface-variant opacity-60">Industrial HQ: Epica Fleksible Office GWR Serpong, Tangerang 14330</span>
+</div>
+</div>
+</footer>
+
+<script>
+        const drawerToggle = document.getElementById('menu-toggle');
+        const navDrawer = document.getElementById('nav-drawer');
+        const drawerOverlay = document.getElementById('drawer-overlay');
+        let isOpen = false;
+
+        function toggleDrawer() {
+            isOpen = !isOpen;
+            if (isOpen) {
+                navDrawer.classList.remove('-translate-x-full');
+                drawerOverlay.classList.remove('opacity-0', 'pointer-events-none');
+                document.body.classList.add('overflow-hidden');
+            } else {
+                navDrawer.classList.add('-translate-x-full');
+                drawerOverlay.classList.add('opacity-0', 'pointer-events-none');
+                document.body.classList.remove('overflow-hidden');
+            }
+        }
+
+        if (drawerToggle) drawerToggle.addEventListener('click', toggleDrawer);
+        if (drawerOverlay) drawerOverlay.addEventListener('click', toggleDrawer);
+
+        // Simple scroll behavior for the header
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const header = document.querySelector('header');
+            if (header) {
+                if (currentScroll > 100) {
+                    header.classList.add('shadow-md');
+                } else {
+                    header.classList.remove('shadow-md');
+                }
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+</body></html>
