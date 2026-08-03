@@ -1,4 +1,10 @@
+# Operating system & temp files
 .DS_Store
+Thumbs.db
 *.log
-node_modules/
 .tempmediaStorage/
+node_modules/
+
+# Zip archives & raw design templates
+*.zip
+template/
