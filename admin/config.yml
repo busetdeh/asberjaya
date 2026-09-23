@@ -27,7 +27,7 @@ collections:
         file: "content/settings.json"
         fields:
           - { label: "Nama Perusahaan", name: "company_name", widget: "string", default: "AS BERJAYA Logistic Services" }
-          - { label: "Alamat Kantor HQ", name: "address", widget: "text", default: "Epica Fleksible Office GWR Serpong, Jl. Mh. Thamrin AA2 No.29, Tangerang 14330" }
+          - { label: "Alamat Kantor HQ", name: "address", widget: "text", default: "Ruko Graha Boulevard, Summarecon Serpong, BVA1, Jl. Gading Serpong Boulevard, Curug Sangereng, Kecamatan Kelapa Dua, Kabupaten Tangerang, Banten 15810" }
           - { label: "Nomor WhatsApp Operational", name: "whatsapp", widget: "string", default: "6281281521619" }
           - { label: "Nomor Telepon Hotline", name: "phone", widget: "string", default: "+62 812-8152-1619" }
           - { label: "Email Resmi", name: "email", widget: "string", default: "info@asberjaya.com" }
